@@ -1,0 +1,23 @@
+{
+  "queries": {
+    "q1": {"question": "When does the promotional interest rate expire?", "relevant": ["savings-intro-terms"]},
+    "q2": {"question": "Which charges apply if a transfer is cancelled?", "relevant": ["transfer-fees", "cancellation-policy"]},
+    "q3": {"question": "How do I request a replacement debit card?", "relevant": ["card-replacement"]},
+    "q4": {"question": "Which documents confirm my proof of address?", "relevant": ["identity-checklist", "address-examples"]},
+    "q5": {"question": "When will my monthly statement be available?", "relevant": ["statement-calendar"]}
+  },
+  "baseline": {
+    "q1": ["savings-intro-terms", "annual-rates"],
+    "q2": ["transfer-fees", "exchange-rates", "atm-limits"],
+    "q3": ["card-issuance", "emergency-contact", "account-opening", "card-replacement"],
+    "q4": ["account-opening", "identity-checklist", "wire-instructions"],
+    "q5": ["statement-calendar"]
+  },
+  "candidate": {
+    "q1": ["annual-rates", "savings-intro-terms"],
+    "q2": ["cancellation-policy", "transfer-fees", "exchange-rates"],
+    "q3": ["card-replacement", "card-issuance"],
+    "q4": ["identity-checklist", "address-examples", "account-opening"],
+    "q5": ["statement-calendar"]
+  }
+}
